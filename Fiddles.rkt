@@ -19,4 +19,4 @@
 
 (define (roteer-rechts lijst keer)
   (append (list-tail lijst (- (length lijst) keer))
-    (take lijst (- (length lijst) keer))))
+(take lijst (- (length lijst) keer))))
