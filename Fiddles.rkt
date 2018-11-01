@@ -8,7 +8,7 @@
 ;a
 (define (roteer-links lijst) (append (rest lijst) (list (first lijst))))
 
-(define (roteer-rechts lijst) (reverse(roteer-links (reverse lijst))))
+(define (roteer-rechts lijst) (reverse (roteer-links (reverse lijst))))
 
 ;b
 
