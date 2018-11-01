@@ -20,8 +20,8 @@
 (define (roteer-links lijst keer)
   (append (list-tail lijst keer) (take lijst keer)))
 
-(define (roteer-links lijst keer)
-  (append (list-tail (reverse lijst) (-(length lijst) keer) (take (reverse lijst) (-(length lijst) keer)))
+(define (roteer-rechts lijst keer)
+  (append (list-tail (reverse lijst) (- (length lijst) keer) (take (reverse lijst) (-( length lijst) keer)))
 
 ;(define (roteer-rechts lijst keer)
 ;  (append (list-tail lijst (- (length lijst) keer))
