@@ -16,5 +16,17 @@ Recursie Scheme
 3.
 (define (in_lijst lijst letter)
   (if (empty? lijst) #f
-    (if (eq? (first lijst)  letter) #t
+    (if (eq? (first lijst) letter) #t
       (in_lijst (rest lijst) letter))))
+
+4.
+
+(define (get_node chain note)
+  (if (empty? chain) #f
+    (if (eq? (first (first chain)) note) (first chain) (get_node (rest chain) note))))
+
+5.
+
+(define (get_successor chain note)
+  (if (empty? chain) #f
+    (if (eq? (first (first chain)) note) (first (shuffle (rest (first chain)))) (get-successor (rest chain) note))))
