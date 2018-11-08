@@ -1,7 +1,6 @@
 Recursie Scheme
 
 1.
-
 (define (aantal lst)
   (if (empty? lst) 0
     (+ 1 (aantal (rest lst)))))
@@ -29,4 +28,6 @@ Recursie Scheme
 5.
 (define (get_successor chain note)
   (if (empty? chain) #f
-    (if (eq? (first (first chain)) note) (first (shuffle (rest (first chain)))) (get-successor (rest chain) note))))
+    (if (eq? (first (first chain)) note)
+     (first (shuffle (rest (first chain))))
+      (get-successor (rest chain) note))))
